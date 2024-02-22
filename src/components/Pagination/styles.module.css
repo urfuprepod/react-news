@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-number,
+.arrow {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+:where(.page-number, .arrow):disabled {
+    cursor: default;
+}
+
+.pagination.dark :where(.page-number, .arrow) {
+    background-color: #23272f;
+    color: #f6f7f9;
+}
+.page-number {
+    padding: 8px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
