@@ -1,10 +1,10 @@
 import axios from "axios";
 import {
     Status,
-    NewsApiResponse,
     ParamsType,
-    CategoriesApiResponse,
-} from "../interfaces";
+} from "../shared/interfaces";
+import { CategoriesApiResponse } from "@/entities/category";
+import { NewsApiResponse } from "@/entities/news";
 
 const BASE_URL = import.meta.env.VITE_NEWS_BASE_API_URL;
 const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
